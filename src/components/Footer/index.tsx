@@ -1,12 +1,17 @@
-import * as S from './styles'
-import imgLogo from "../../assets/footerLogo.png"
+import * as S from "./styles";
+import imgLogo from "../../assets/footerLogo.png";
 
 export function Footer() {
-  return(
+  return (
     <S.Container>
       <S.Content>
-        <img className="logo" src={imgLogo} alt="Pokeball" onClick={() => window.open("https://pokeapi.co/")}/>
+        <S.FooterImage
+          className="logo"
+          src={imgLogo}
+          alt="Pokeball"
+          onClick={() => window.open("https://pokeapi.co/")}
+        />
       </S.Content>
     </S.Container>
-  )
+  );
 }

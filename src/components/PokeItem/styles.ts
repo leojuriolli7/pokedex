@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.main`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-`
+`;
 
 export const Content = styled.div`
   display: flex;
@@ -14,11 +14,11 @@ export const Content = styled.div`
   padding: 1rem 2rem;
   border-radius: 20px;
   margin: 1rem;
-  box-shadow: 1px 5px 15px 5px rgba(0,0,0,0.10);
+  box-shadow: 1px 5px 15px 5px rgba(0, 0, 0, 0.1);
   transition: all 400ms ease;
   cursor: pointer;
 
-  p{
+  p {
     font-size: 18px;
     color: var(--title-text);
   }
@@ -26,14 +26,16 @@ export const Content = styled.div`
   &:hover {
     transform: scale(1.05);
   }
+`;
 
-  p::first-letter {
-    text-transform:capitalize;
-  }
+export const PokemonSprite = styled.img`
+  width: 130px;
+  height: 120px;
+  object-fit: cover;
+`;
 
-  img {
-    width: 130px;
-    height: 120px;
-    object-fit: cover;
+export const PokemonName = styled.p`
+  ::first-letter {
+    text-transform: capitalize;
   }
-`
+`;
