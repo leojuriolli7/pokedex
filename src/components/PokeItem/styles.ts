@@ -3,6 +3,14 @@ import styled from "styled-components";
 export const Container = styled.main`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 649px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 429px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Content = styled.div`
