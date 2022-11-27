@@ -4,7 +4,7 @@ This app was created with ReactJS and consumes the <a href="https://pokeapi.co/"
 
 It displays a list of the original 151 pokemon and when one of them is clicked, it opens a modal listing their unique abilities.
 
-Available on Heroku: https://pokedex-7.herokuapp.com/
+Deployed on Vercel: https://pokedex-leojuriolli.vercel.app/
 
 ## Installation
 
